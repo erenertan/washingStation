@@ -78,14 +78,13 @@ button {
 #btnWhites {
 	float: right;
 	margin-right:100px;
-	margin-top: -40px;
-	/*15vw*/
+	margin-top: -60px;
 }
 
 #btnBlacks {
 	float: left;
 	margin-left:100px;
-	margin-top: -40px;
+	margin-top: -60px;
 }
 
 /*#buttonDiv {
