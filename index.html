@@ -19,8 +19,8 @@
 			<br><br>
 
 			<div class="imgDiv" align="center">
-				<img id="img" src="./black-icon.png" height="200" width="200" alt="machine" align="center"/>
 				<img id="img" src="./white-icon.png" height="200" width="200" alt="machine" align="center"/>
+				<img id="img" src="./black-icon.png" height="200" width="200" alt="machine" align="center"/>
 					<!-- Old icon: https://d30y9cdsu7xlg0.cloudfront.net/png/3226-200.png -->
 					<br>
 			</div>
@@ -29,10 +29,10 @@
 				<h2 align="center">Doluluk: </h2>
 				<div id="textBox">
 					<p class="alignLeft" align="center">
-						<textarea id="distValueColor"></textarea>
+					<textarea id="distValueWhite"></textarea>
 					</p>
 					<p class="alignRight" align="center">
-					<textarea id="distValueWhite"></textarea>
+						<textarea id="distValueColor"></textarea>
 					</p>
 				</div>
 
@@ -41,10 +41,10 @@
 				<h2 align="center">Sıcaklık: </h2>
 				<div id="textBox">
 					<p class="alignLeft">
-						<textarea id="tempValueColor"></textarea>
+						<textarea id="tempValueWhite"></textarea>
 					</p>
 					<p class="alignRight">
-						<textarea id="tempValueWhite"></textarea>
+						<textarea id="tempValueColor"></textarea>
 					</p>
 				</div>
 
@@ -53,17 +53,15 @@
 				<h2 align="center">Nem:</h2>
 				<div id="textBox">
 					<p class="alignLeft">
-						<textarea id="humidityValueColor"></textarea>
+						<textarea id="humidityValueWhite"></textarea>
 					</p>
 					<p class="alignRight">
-						<textarea id="humidityValueWhite"></textarea>
+						<textarea id="humidityValueColor"></textarea>
 					</p>
 				</div>
 				<div style="clear: both;"></div>
-							
-					<button id="btnWhites" onClick="runWhites()"><i class="fa fa-arrow-right"	aria-hidden="true"></i></button>
 					<button id="btnBlacks" onClick="runBlacks()"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-					
+					<button id="btnWhites" onClick="runWhites()"><i class="fa fa-arrow-right"	aria-hidden="true"></i></button>
 				</div>
 			</div>
 		</div>
