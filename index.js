@@ -16,11 +16,11 @@ var oldDistValueWhite = 0;
 var humidityValueWhite = document.getElementById("humidityValueWhite");
 
 
-var databaseColorRef = firebase.database().ref('devices/'+ 'color/').limitToFirst(1);
+var databaseColorRef = firebase.database().ref('devices/'+ 'color/').limitToLast(1);
 
 databaseColorRef.on('value', gotDataColor, errDataColor);
 
-var databaseWhiteRef = firebase.database().ref('devices/'+ 'white/').limitToFirst(1);
+var databaseWhiteRef = firebase.database().ref('devices/'+ 'white/').limitToLast(1);
 
 databaseWhiteRef.on('value', gotDataWhite, errDataWhite);
 
