@@ -80,11 +80,11 @@ function errDataWhite(err) {
 
 
 function runWhites() {
-	firebase.database().ref('RunWhite/').set("true");
+	 firebase.database().ref('RunWhite/').set("true");
 }
 
 function runBlacks() {
-	firebase.database().ref('RunColor/').set("true");
+	 firebase.database().ref('RunColor/').set("true");
 }
 
 

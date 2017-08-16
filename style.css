@@ -1,16 +1,17 @@
 body {
 	background: #21252b;
 	color: #333;
-	font-size: 14px;
+	font-size: 18px;
 	font-family: 'Raleway', sans-serif;
 	padding: 0;
-	maring: 0;
+	margin: 0;
+	height: 100%;
 }
 
 * {
 	box-sizing: border-box;
 	font-family: 'Raleway', sans-serif;
-	margin: 0;
+	/*margin: 20px;*/
 	font-size: 16px;
 	outline: none;
 }
@@ -23,10 +24,24 @@ input, button {
 .mainDiv {
 	background: #fff;
 	padding: 20px;
-	width: 450px;
+	width: 650px;
 	margin: 0px auto;
 	margin-top: 200px;
 	box-shadow: 0 0 20px #333;
+}
+
+.imgDiv {
+	min-height:250px;
+}
+
+.alignLeft {
+	float: left;
+	/*text-align: center;*/
+}
+
+.alignRight {
+	float: right;
+	text-align: center;
 }
 
 h1 {
@@ -41,15 +56,101 @@ textarea {
 	outline: none;
 	width: 100%;
 	resize: none;
+	text-align: center;
 }
 
 button {
 	background: #528bff;
 	color: #fff;
-	position: relative;
+	/*position: relative;*/
 	top: 0px;
 	width: 64px;
 	height: 64px;
 	line-height: 38px;
 	border-radius: 100%;
+
+}
+
+#img {
+	margin: 40px;
+}
+
+#btnWhites {
+	float: right;
+	margin-right:100px;
+	margin-top: -40px;
+	/*15vw*/
+}
+
+#btnBlacks {
+	float: left;
+	margin-left:100px;
+	margin-top: -40px;
+}
+
+/*#buttonDiv {
+	justify-content: center;
+}*/
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
 }

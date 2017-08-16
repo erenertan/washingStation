@@ -4,6 +4,7 @@
 	<title>Firebase Web Basics</title>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0"/>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
 
 	<script src="https://use.fontawesome.com/939e9dd52c.js"></script>
@@ -11,52 +12,63 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-
 </head>
-<body>
+	<body>
+		<div class="mainDiv" align="center">
+			<h1 align="middle">Çamaşır İstasyonu</h1>
+			<br><br>
 
-
-<div class="container">
-	<div class="row">
-		<div class="col-sm">
-			<div class="mainDiv" align="right">
-				<h1 align="middle">Çamaşır Makinesi</h1>
-				<br><br>
-
-				<div align="center">
-					<img src="/home/halil/Desktop/machine/black-icon.png" height="200" width="200" alt="machine" align="center"/>
+			<div class="imgDiv" align="center">
+				<img id="img" src="/home/halil/Desktop/machine/black-icon.png" height="200" width="200" alt="machine" align="center"/>
+				<img id="img" src="/home/halil/Desktop/machine/white-icon.png" height="200" width="200" alt="machine" align="center"/>
 					<!-- Old icon: https://d30y9cdsu7xlg0.cloudfront.net/png/3226-200.png -->
-				</div>
-				<br>
-				<div>
-					<h2 align="middle">Doluluk: <textarea id="distValueColor"></textarea></h2>        
-					<h2 align="middle">Sıcaklık: <textarea id="tempValueColor"></textarea></h2>
-					<h2 align="middle">Nem: <textarea id="humidityValueColor"></textarea></h2>
-					<button id="btnWhites" onClick="runWhites()"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
-				</div>
+					<br>
 			</div>
-		</div>
-		<div class="col-sm"></div>
-		<div class="col-sm">
-			<div class="mainDiv" align="right">
-				<h1 align="middle">Çamaşır Makinesi</h1>
-				<br><br>
+			<br>
+			<div>
+				<h2 align="center">Doluluk: </h2>
+				<div id="textBox">
+					<p class="alignLeft" align="center">
+						<textarea id="distValueColor"></textarea>
+					</p>
+					<p class="alignRight" align="center">
+					<textarea id="distValueWhite"></textarea>
+					</p>
+				</div>
 
-				<div align="center">
-					<img src="/home/halil/Desktop/machine/white-icon.png" height="200" width="200" alt="machine" align="center"/>
+				<div style="clear: both;"></div>
+
+				<h2 align="center">Sıcaklık: </h2>
+				<div id="textBox">
+					<p class="alignLeft">
+						<textarea id="tempValueColor"></textarea>
+					</p>
+					<p class="alignRight">
+						<textarea id="tempValueWhite"></textarea>
+					</p>
 				</div>
-				<br>
-				<div>
-					<h2 align="middle">Doluluk: <textarea id="distValueWhite"></textarea></h2>        
-					<h2 align="middle">Sıcaklık: <textarea id="tempValueWhite"></textarea></h2>
-					<h2 align="middle">Nem: <textarea id="humidityValueWhite"></textarea></h2>
+
+				<div style="clear: both;"></div>
+
+				<h2 align="center">Nem:</h2>
+				<div id="textBox">
+					<p class="alignLeft">
+						<textarea id="humidityValueColor"></textarea>
+					</p>
+					<p class="alignRight">
+						<textarea id="humidityValueWhite"></textarea>
+					</p>
+				</div>
+				<div style="clear: both;"></div>
+							
+					<button id="btnWhites" onClick="runWhites()"><i class="fa fa-arrow-right"	aria-hidden="true"></i></button>
 					<button id="btnBlacks" onClick="runBlacks()"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+					
 				</div>
 			</div>
 		</div>
-	</div>
-</div>
+
+			
 
 
 	
@@ -78,11 +90,6 @@
 
 <script src="index.js"></script>
 
-
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
 </body>
 </html>
